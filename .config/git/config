@@ -1,0 +1,31 @@
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true
+
+[alias]
+	# Format reference: https://git-scm.com/docs/pretty-formats
+	# First commit
+	fc = rev-list --max-parents=0 --no-commit-header --format='\
+%C(red)%H %C(green)%ai%n%n\
+%C(bold white)%s%C(yellow)%d%n\
+%C(bold blue)%an %C(bold magenta)%G?%n\
+%C(reset)%n%-b' HEAD
+	# Last commit
+	lc = show --quiet --format='\
+%C(red)%H %C(green)%ai%n%n\
+%C(bold white)%s%C(yellow)%d%n\
+%C(bold blue)%an %C(bold magenta)%G?%n\
+%C(reset)%n%-b' HEAD
+	# Short pretty log
+	spl = log --graph --format='%C(red)%h%C(reset) - %s%C(yellow)%d%C(reset)'
+	# Long pretty log
+	lpl = log --graph --format='\
+%C(red)%H %C(green)%ai%n%n\
+%C(bold white)%s%C(yellow)%d%n\
+%C(bold blue)%an (%ae) %C(bold magenta)%G?%n\
+%C(reset)%n%-b'
+
+[include]
+	path = ~/.local/config/git/config

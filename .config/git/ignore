@@ -1,0 +1,29 @@
+# References:
+# https://github.com/github/gitignore/blob/main/Global/Linux.gitignore
+# https://github.com/github/gitignore/blob/main/Global/Vim.gitignore
+
+# Temporary files
+*~*
+
+# Trash directory
+.Trash-*
+
+# Files created when a process still has a handle open for a deleted file
+.fuse_hidden*
+
+# Files created when an open file is removed but is still being accessed
+.nfs*
+
+# Vim swap files
+[._]*.s[a-v][a-z]
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# General ignore directory
+/.ignore/
+
+# VS Code
+/.vscode/
