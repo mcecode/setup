@@ -1,3 +1,7 @@
+[user]
+	name = Matthew Espino
+	email = 65783406+mcecode@users.noreply.github.com
+
 [init]
 	defaultBranch = main
 
@@ -26,6 +30,3 @@
 %C(bold white)%s%C(yellow)%d%n\
 %C(bold blue)%an (%ae) %C(bold magenta)%G?%n\
 %C(reset)%n%-b'
-
-[include]
-	path = ~/.local/config/git/config
