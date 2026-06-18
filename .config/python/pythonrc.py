@@ -1,4 +1,7 @@
-# Taken from xdg-ninja commit f2ab12bbf1cf60dc3cc9459d122811c55ba88150
+# Taken from xdg-ninja
+# Link: https://github.com/b3nj5m1n/xdg-ninja
+# File: programs/python.json
+# Commit: f2ab12bbf1cf60dc3cc9459d122811c55ba88150
 
 # file: $PYTHONSTARTUP
 # You should make sure $PYTHON_HISTORY is set in your shell startup for

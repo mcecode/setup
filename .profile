@@ -21,7 +21,7 @@ export DOTNET_CLI_HOME="${XDG_DATA_HOME}/dotnet"
 
 export XDG_STATE_HOME="${HOME}/.local/state"
 export HISTFILE="${XDG_STATE_HOME}/bash/history"
-if ! [ -f "$HISTFILE" ]; then
+if [ ! -f "$HISTFILE" ]; then
 	mkdir --parents "$(dirname "$HISTFILE")"
 	touch "$HISTFILE"
 fi
