@@ -45,7 +45,7 @@ _handle_exit() {
 			func="${FUNCNAME[$i]}"
 			src="${BASH_SOURCE[$i]}"
 
-			if [[ $i -gt 1 ]]; then
+			if ((i > 1)); then
 				line="${BASH_LINENO[i - 1]}"
 			fi
 
