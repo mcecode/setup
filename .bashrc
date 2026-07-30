@@ -147,6 +147,8 @@ alias diff="diff --color=auto"
 alias difc="diff --side-by-side"
 # Diff silent
 alias difs="diff --brief --report-identical-files"
+# Diff recursive
+alias difr="diff --recursive"
 # Dotfiles
 alias dotfiles='git --git-dir="${HOME}/.dotfiles" --work-tree="$HOME"'
 # Grep auto-color
